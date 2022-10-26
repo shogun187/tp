@@ -357,6 +357,8 @@ Below is a sequence diagram to show the interaction between the `Logic` and `Mod
 After that, `MainWindow` would call `LogicManager#getPatientOfInterest()` to retrieve the required patient. Thereafter, assuming a patient is added, `MainWindow` calls `OutputPanel#handleAddPatient()` with the patient as a parameter, which would then create a `UpdatedPersonCard` with the patient’s details which appears in the `OutputPanel`.
 
 Below is the sequence diagram which shows the entire interaction between the `UI`, `Logic`, and `Model` components for **adding a patient** (sequence is similar for editing and deleting a patient):
+
+
 <img src="images/AddPatientSequenceDiagram2.png"  />
 --------------------------------------------------------------------------------------------------------------------
 
