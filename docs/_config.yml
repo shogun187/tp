@@ -1,12 +1,13 @@
 title: "UniNurse"
 theme: minima
+markdown: kramdown
 
 header_pages:
   - UserGuide.md
   - DeveloperGuide.md
   - AboutUs.md
 
-markdown: kramdown
+
 
 repository: "AY2223S1-CS2103T-T12-4/tp"
 github_icon: "images/github-icon.png"
