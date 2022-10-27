@@ -90,8 +90,13 @@ public class RecurringTask extends Task {
     }
 
     @Override
+    public boolean isRecurring() {
+        return true;
+    }
+
+    @Override
     public String getRecurrenceString() {
-        return String.format(" Every %s %s", getFrequency(),
+        return String.format("Every %s %s", getFrequency(),
                 getRecurrence().toString().toLowerCase());
     }
 

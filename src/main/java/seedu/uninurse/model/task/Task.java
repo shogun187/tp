@@ -71,6 +71,10 @@ public class Task {
         return "One-Time";
     }
 
+    public boolean isRecurring() {
+        return false;
+    }
+
     @Override
     public String toString() {
         return taskDescription + " " + dateTime;

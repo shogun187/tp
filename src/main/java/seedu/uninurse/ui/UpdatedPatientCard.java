@@ -238,7 +238,12 @@ public class UpdatedPatientCard extends UiPart<Region> {
         HBox taskBox = new HBox();
         taskBox.setSpacing(2.5);
 
-        Label taskNameLabel = new Label(task.getTaskDescription());
+        Label taskNameLabel;
+        if (task.isRecurring()) {
+            taskNameLabel = new Label(task.getTaskDescription() + String.format(" (%s)", task.getRecurrenceString()));
+        } else {
+            taskNameLabel = new Label(task.getTaskDescription());
+        }
         taskNameLabel.setWrapText(true);
         taskNameLabel.setStyle("-fx-font-family: \"Open Sans Semibold\";"
                 + "-fx-font-size: 13px;"
